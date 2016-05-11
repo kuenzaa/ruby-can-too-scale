@@ -4,8 +4,6 @@ ruby '2.3.1'
 
 gem "newrelic_rpm"
 
-gem "rails_12factor"
-
 gem "faker"
 
 gem "puma"
@@ -42,5 +40,6 @@ group :development do
 
   gem "pry"
   gem "awesome_print"
-end
 
+  gem "descriptive_statistics"
+end
