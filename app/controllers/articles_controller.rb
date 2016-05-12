@@ -1,10 +1,13 @@
+require 'sequel'
+
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  DB = Sequel.postgres('ruby-can-too-scale_production')
 
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = DB[:articles].all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
@@ -72,7 +75,7 @@ class ArticlesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
-      @article = Article.find(params[:id])
+      @article = DB[:articles].where(id: params[:id]).all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

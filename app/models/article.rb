@@ -1,2 +1,2 @@
-class Article < ActiveRecord::Base
-end
+#class Article < ActiveRecord::Base
+#end

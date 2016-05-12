@@ -12,7 +12,17 @@ gem "oj"
 gem "oj_mimic_json"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+#gem 'rails', '4.2.6'
+
+gem "sequel"
+
+gem "actionmailer", "4.2.6"
+gem "actionpack", "4.2.6"
+gem "actionview", "4.2.6"
+gem "activejob", "4.2.6"
+gem "activesupport", "4.2.6"
+gem "railties", "4.2.6"
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # bundle exec rake doc:rails generates the API under doc/api.
