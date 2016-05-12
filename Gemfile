@@ -6,5 +6,5 @@ gem "puma"
 
 gem "oj"
 gem "sequel"
-gem "sinatra"
+gem "sinatra", github: "sinatra/sinatra"
 gem "pg"
